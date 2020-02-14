@@ -1,0 +1,9 @@
+import 'package:event_bus/event_bus.dart';
+
+EventBus eventBus = new EventBus();
+
+class Events {
+  String event;
+
+  Events(this.event);
+}
