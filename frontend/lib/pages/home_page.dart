@@ -3,6 +3,7 @@ import 'package:fab_circular_menu/fab_circular_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:adhara_socket_io/adhara_socket_io.dart';
 import 'package:oktoast/oktoast.dart';
+import 'package:uhear/dialogs/about_dialog.dart';
 import 'package:uhear/socket_util.dart';
 import 'package:uhear/widgets/player_widget.dart';
 import 'package:uhear/global.dart';
@@ -118,6 +119,12 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text('Uhear'),
           actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.info),
+              onPressed: () {
+                aboutDialog(context);
+              },
+            ),
             IconButton(
               icon: Icon(Icons.search),
               onPressed: () {
